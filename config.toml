@@ -1,13 +1,28 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://kelvin-olaiya.github.io"
+languageCode = "en-us"
+title = "Kelvin Olaiya"
+themesDir = "themes"
+theme = "hugo-winston-theme"
 
-theme = "reveal-hugo"
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+paginate = 3
 
-[markup.goldmark.renderer]
-unsafe = true
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
 
-[outputFormats.Reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
+[params]
+  google_analytics_id = ""
+  twitter_handle = "@keldollaro"
+
+  showAuthorOnHomepage = true
+  showAuthorOnPosts = false
+  showPostsOnHomepage = false
+
+  addFrame = true
+  addDot = true
+
+  highlightColor = '#7b16ff'
